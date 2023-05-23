@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+      <ul>
+        <li><a href="{% url 'all_books' %}">All books</a></li>
+        <li><a href="{% url 'login' %}">Login</a></li>
+        <li><a href="{% url 'book' %}">Add book</a></li>
+        <li><a href="{% url 'author' %}">Add author</a></li>
+        <li><a href="{% url 'publisher' %}">Add publisher</a></li>
+        <li><a href="{% url 'logout' %}">Logout</a></li>
+      </ul>
+
+</body>
+</html>
